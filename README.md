@@ -5,10 +5,10 @@ Müşteri Arama ve Bilgi girme, Satış Takibi ve Arama sistemi ve Borç / Emane
 Bilgiler SQLServer'da tutulup yedekleme ve değiştirme yapılabiliyor.
 
 <p align="center">
-  <img src="Screenshot/foto1.png" width="500" height="500">
-  <img src="Screenshot/foto2.png" width="500" height="500">
-  <img src="Screenshot/foto3.png" width="500" height="500">
-  <img src="Screenshot/foto4.png" width="500" height="500">
+  <img src="Screenshot/foto1.PNG" width="500" height="500">
+  <img src="Screenshot/foto2.PNG" width="500" height="500">
+  <img src="Screenshot/foto3.PNG" width="500" height="500">
+  <img src="Screenshot/foto4.PNG" width="500" height="500">
 </p>
 
 
