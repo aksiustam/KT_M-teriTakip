@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="KTMTModelStoreContainer" CdmEntityContainer="KTMTEntities1">
+    <EntitySetMapping Name="FL">
+      <EntityTypeMapping TypeName="KTMTModel.FL">
+        <MappingFragment StoreEntitySet="FL">
+          <ScalarProperty Name="fl_id" ColumnName="fl_id" />
+          <ScalarProperty Name="fl_ad" ColumnName="fl_ad" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="musteri">
+      <EntityTypeMapping TypeName="KTMTModel.musteri">
+        <MappingFragment StoreEntitySet="musteri">
+          <ScalarProperty Name="m_id" ColumnName="m_id" />
+          <ScalarProperty Name="fl_id" ColumnName="fl_id" />
+          <ScalarProperty Name="m_live" ColumnName="m_live" />
+          <ScalarProperty Name="m_adi" ColumnName="m_adi" />
+          <ScalarProperty Name="m_soyadı" ColumnName="m_soyadı" />
+          <ScalarProperty Name="m_tc" ColumnName="m_tc" />
+          <ScalarProperty Name="m_tel" ColumnName="m_tel" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="KTMTModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="FL">
+    <Key>
+      <PropertyRef Name="fl_id" />
+    </Key>
+    <Property Name="fl_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="fl_ad" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="musteri">
+    <Key>
+      <PropertyRef Name="m_id" />
+    </Key>
+    <Property Name="m_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="fl_id" Type="Int32" />
+    <Property Name="m_live" Type="Boolean" />
+    <Property Name="m_adi" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="m_soyadı" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="m_tc" Type="String" MaxLength="11" FixedLength="false" Unicode="true" />
+    <Property Name="m_tel" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="KTMTEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="FL" EntityType="Self.FL" />
+    <EntitySet Name="musteri" EntityType="Self.musteri" />
+  </EntityContainer>
+</Schema>

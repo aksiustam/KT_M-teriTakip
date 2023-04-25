@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="KTMTModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'KTMT.dbo.FL' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="FL">
+    <Key>
+      <PropertyRef Name="fl_id" />
+    </Key>
+    <Property Name="fl_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="fl_ad" Type="nvarchar" MaxLength="15" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'KTMT.dbo.musteri' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="musteri">
+    <Key>
+      <PropertyRef Name="m_id" />
+    </Key>
+    <Property Name="m_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="fl_id" Type="int" />
+    <Property Name="m_live" Type="bit" />
+    <Property Name="m_adi" Type="nvarchar" MaxLength="30" />
+    <Property Name="m_soyadı" Type="nvarchar" MaxLength="30" />
+    <Property Name="m_tc" Type="nvarchar" MaxLength="11" />
+    <Property Name="m_tel" Type="nvarchar" MaxLength="10" />
+  </EntityType>
+  <EntityContainer Name="KTMTModelStoreContainer">
+    <EntitySet Name="FL" EntityType="Self.FL" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [FL].[fl_id] AS [fl_id], 
+    [FL].[fl_ad] AS [fl_ad]
+    FROM [dbo].[FL] AS [FL]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="musteri" EntityType="Self.musteri" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [musteri].[m_id] AS [m_id], 
+    [musteri].[fl_id] AS [fl_id], 
+    [musteri].[m_live] AS [m_live], 
+    [musteri].[m_adi] AS [m_adi], 
+    [musteri].[m_soyadı] AS [m_soyadı], 
+    [musteri].[m_tc] AS [m_tc], 
+    [musteri].[m_tel] AS [m_tel]
+    FROM [dbo].[musteri] AS [musteri]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>
