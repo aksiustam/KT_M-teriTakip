@@ -9,6 +9,7 @@ Bilgiler SQLServer'da tutulup yedekleme ve değiştirme yapılabiliyor.
   <img src="Screenshot/foto2.PNG" >
   <img src="Screenshot/foto3.PNG" >
   <img src="Screenshot/foto4.PNG" >
+  <img src="Screenshot/foto5.PNG" >
 </p>
 
 
